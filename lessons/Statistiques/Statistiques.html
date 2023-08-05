@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="savoir calculer le mode ,la moyenne, la médiane et l'étendue en utilisant un tableau des données et la représentation soue forme de diagramme des batons des effecifs .">
+    <meta name="keywords" content="statistique,calcul,purcentage,population,données,tableau,effectifs,fréquence,moyenne,diagrammes,problème,mode,médiane,">
+    <title>Statistiques : || 4IEME</title>
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../dist/bootstrap-icons/bootstrap-icons.css">
+    <script src="../../dist/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <a href="../Lessons.html"><i class="bi-arrow-left fs-1"></i></a>
+
+    <div class="MC" id="MC">
+        <div class="container_left">
+            <div class="menu-left">
+                <li class="fs-5 text-center text-decoration-underline">
+                    LESSONS ET CES DERIVEES :
+                </li>
+                <li>
+                    <a href="../../lessons/Calcul-numérique/Calcul-numérique.html" class="Calcul-numérique" id="Calcul-numérique" target="_top" title="Calcul numérique">Calcul numérique</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="87Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="444Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="450Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="914Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="348Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="428Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="362Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="418réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="193Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="763Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Racines-carrées/Racines-carrées.html" class="Racines-carrées" id="Racines-carrées" target="_top" title="Racines carrées">Racines carrées</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="674Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="833Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="959Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="836Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="998Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="789Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="800Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="411réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="423Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="146Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Ordre-et-opérations/Ordre-et-opérations.html" class="Ordre-et-opérations" id="Ordre-et-opérations" target="_top" title="Ordre et opérations">Ordre et opérations</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="441Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="59Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="838Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="208Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="198Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="200Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="637Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="175réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="541Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="182Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Théorème-de-Pythagore/Théorème-de-Pythagore.html" class="Théorème-de-Pythagore" id="Théorème-de-Pythagore" target="_top" title="Théorème de Pythagore">Théorème de Pythagore</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="711Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="580Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="407Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="308Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="982Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="175Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="681Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="476réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="644Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="198Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Théorème-de-thalès/Théorème-de-thalès.html" class="Théorème-de-thalès" id="Théorème-de-thalès" target="_top" title="Théorème de thalès">Théorème de thalès</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="272Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="232Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="778Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="981Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="880Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="324Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="663Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="879réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="267Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="237Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Trigonomètrie/Trigonomètrie.html" class="Trigonomètrie" id="Trigonomètrie" target="_top" title="Trigonomètrie">Trigonomètrie</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="501Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="704Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="19Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="918Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="775Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="123Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="463Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="72réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="153Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="510Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Angles-au-cercle-et-angles-inscrits/Angles-au-cercle-et-angles-inscrits.html" class="Angles-au-cercle-et-angles-inscrits" id="Angles-au-cercle-et-angles-inscrits" target="_top" title="Angles au cercle et angles inscrits">Angles au cercle et angles inscrits</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="806Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="932Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="431Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="189Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="615Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="194Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="523Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="475réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="997Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="658Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Equations-et-inéquation/Equations-et-inéquation.html" class="Equations-et-inéquation" id="Equations-et-inéquation" target="_top" title="Equations et inéquation">Equations et inéquation</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="378Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="414Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="625Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="361Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="199Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="97Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="605Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="334réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="813Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="321Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/triangles-semblables-et-Triangles-isométriques/triangles-semblables-et-Triangles-isométriques.html" class="triangles-semblables-et-Triangles-isométriques" id="triangles-semblables-et-Triangles-isométriques" target="_top" title="triangles semblables et Triangles isométriques">triangles semblables et Triangles isométriques</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="643Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="44Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="712Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="8Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="112Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="270Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="855Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="579réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="150Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="295Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Vecteurs-et-translation/Vecteurs-et-translation.html" class="Vecteurs-et-translation" id="Vecteurs-et-translation" target="_top" title="Vecteurs et translation">Vecteurs et translation</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="460Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="346Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="726Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="416Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="411Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="909Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="301Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="208réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="836Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="685Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Repère-dans-la-plan/Repère-dans-la-plan.html" class="Repère-dans-la-plan" id="Repère-dans-la-plan" target="_top" title="Repère dans la plan">Repère dans la plan</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="667Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="47Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="865Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="995Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="646Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="214Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="976Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="750réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="215Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="481Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Equation-de-la-droite/Equation-de-la-droite.html" class="Equation-de-la-droite" id="Equation-de-la-droite" target="_top" title="Equation de la droite">Equation de la droite</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="295Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="539Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="120Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="712Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="903Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="641Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="27Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="419réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="393Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="453Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Fonction-linéaire-et-fonctions-affines/Fonction-linéaire-et-fonctions-affines.html" class="Fonction-linéaire-et-fonctions-affines" id="Fonction-linéaire-et-fonctions-affines" target="_top" title="Fonction linéaire et fonctions affines">Fonction linéaire et fonctions affines</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="305Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="332Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="366Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="608Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="389Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="8Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="709Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="178réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="466Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="733Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Système-de-deux-équations-du-premier-degrè-à-deux-inconnues/Système-de-deux-équations-du-premier-degrè-à-deux-inconnues.html" class="Système-de-deux-équations-du-premier-degrè-à-deux-inconnues" id="Système-de-deux-équations-du-premier-degrè-à-deux-inconnues"
+                        target="_top" title="Système de deux équations du premier degrè à deux inconnues">Système de deux équations du premier degrè à deux inconnues</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="934Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="82Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="324Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="110Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="985Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="706Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="200Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="435réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="196Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="735Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Calcul-des-volume-dans-l'espace-la-réduction-et-l'agrandissement/Calcul-des-volume-dans-l'espace-la-réduction-et-l'agrandissement.html" class="Calcul-des-volume-dans-l'espace-la-réduction-et-l'agrandissement" id="Calcul-des-volume-dans-l'espace-la-réduction-et-l'agrandissement"
+                        target="_top" title="Calcul des volume dans l'espace la réduction et l'agrandissement">Calcul des volume dans l'espace la réduction et l'agrandissement</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="490Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="996Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="756Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="591Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="977Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="483Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="224Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="139réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="293Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="438Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lessons/Statistiques/Statistiques.html" class="Statistiques" id="Statistiques" target="_top" title="Statistiques">Statistiques</a>
+                    <ul class="_class">
+                        <li>
+                            <a href="Exercices.html" class="Exercices" id="637Exercices" title="Exercices">Exercices</a>
+                        </li>
+                        <li>
+                            <a href="Pratiques.html" class="Pratiques" id="38Pratiques" title="Pratiques">Pratiques</a>
+                        </li>
+                        <li>
+                            <a href="Evaluation.html" class="Evaluation" id="631Evaluation" title="Evaluation">Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="Examens.html" class="Examens" id="651Examens" title="Examens">Examens</a>
+                        </li>
+                        <li>
+                            <a href="Résumée.html" class="Résumée" id="421Résumée" title="Résumée">Résumée</a>
+                        </li>
+                        <li>
+                            <a href="Jeux d'apprentissage.html" class="Jeux d'apprentissage" id="395Jeux_d'apprentissage" title="Jeux d'apprentissage">Jeux d'apprentissage</a>
+                        </li>
+                        <li>
+                            <a href="Test.html" class="Test" id="201Test" title="Test">Test</a>
+                        </li>
+                        <li>
+                            <a href="réactions.html" class="réactions" id="531réactions" title="réactions">réactions</a>
+                        </li>
+                        <li>
+                            <a href="Animations.html" class="Animations" id="458Animations" title="Animations">Animations</a>
+                        </li>
+                        <li>
+                            <a href="Niveaux.html" class="Niveaux" id="581Niveaux" title="Niveaux">Niveaux</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+        <section class="cours" id="cours">
+            <h1 class="text-center display-1 fs-3">
+                Les statistiques
+            </h1>
+            <section>
+                <h2 class="mode">1 -Mode</h2>
+                Définition :
+                <p>
+                    Le mode d'une série statistique :est une valeur du caractère dont l'effectif associé est le plus grand .
+                </p>
+                Exemple :
+                <p>
+                    On a relevé les notes des élèves lors d'un examen .
+                </p>
+                <table class="container">
+                    <tr>
+                        <th>Notes</th>
+                        <th>05</th>
+                        <th>20</th>
+                        <th>10</th>
+                        <th>15</th>
+                    </tr>
+                    <tr>
+                        <th>Effectifs</th>
+                        <th>01</th>
+                        <th>02</th>
+                        <th>03</th>
+                        <th>02</th>
+                    </tr>
+                </table>
+                <img src="Documentations/le_mode_d'une_serie_statistique.svg" alt="définir le mode d'une sèrie statistique .">
+                <p>
+                    <li>
+                        10 est la valeur du caractère dont l'effectif associé est le plus grand .
+                    </li>
+                    <li>
+                        10 est le mode de cette sèrie statistique .
+                    </li>
+                </p>
+                Remarque :
+                <p>La série statistique peut admettre plusieurs modes.<br> les nombres des visiteurs d'un restaurant pendant une semaine :
+                    <table class="container">
+                        <tr>
+                            <th>Visiteurs</th>
+                            <th>05</th>
+                            <th>20</th>
+                            <th>10</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>Effectifs</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>1</th>
+                            <th>2</th>
+                        </tr>
+                    </table>
+                    <li>20 et 15 sont deux valeurs dont l'effectif associé (à chacune) est le plus grand
+                    </li>
+                    <li>La série statistique du nombre de visiteurs admet donc deux modes : 20 et 15 . </li>
+                </p>
+            </section>
+            <section>
+                <h2> 2 -La moyenne</h2>
+                Définition :
+                <p>
+                    La moyenne de la série statistique b<sub>1</sub> , b<sub>2</sub> , ... , b<sub>n</sub> est le nombre suivant :
+                </p>
+                <img src="Documentations/expression_de_la_moyenne_serie_statistique.svg" alt="expression de la moyenne d'une série statistique .">
+                <h5>Remarque :</h5>
+                <p>
+                    les nombres ne peuvent pas être en général distincts deux à deux . <br> Pour calculer la moyenne , parfois il peut etre commode d'associé ou regrouper préalablement les a<sub>i</sub> égaux entre eux.
+                </p>
+                <h5>Exemple :</h5>
+                <p>
+                    Notons par la moyenne de la série des poids des 12 joueurs d'une équipe de football
+                    <div class="d-flex p-1">
+                        <div class=" w-25 text-center border-dark border">poinds :</div>
+                        <div class=" w-25 text-center border-dark border">70</div>
+                        <div class=" w-25 text-center border-dark border">70</div>
+                        <div class=" w-25 text-center border-dark border">80</div>
+                        <div class=" w-25 text-center border-dark border">84</div>
+                    </div>
+                    <div class="d-flex p-1">
+                        <div class=" w-25 text-center border-dark border">Effectifs :</div>
+                        <div class=" w-25 text-center border-dark border">1</div>
+                        <div class=" w-25 text-center border-dark border">3</div>
+                        <div class=" w-25 text-center border-dark border">4</div>
+                        <div class=" w-25 text-center border-dark border">2</div>
+                    </div>
+                    <li>Calucl de la moyenne à partir du tableau : </li>
+                </p>
+                <img src="Documentations/calcul_de_la_moyenne.svg" alt="le calcul de la moyenne : exemple d'application de la remarque .">
+            </section>
+            <!-- la mediane -->
+            <section>
+                <h2>3 -La médiane </h2>
+                Définition :
+                <p>
+                    Soit une série statistique ordonnée , on appelle la médiane la valeur du caractère qui partage cette série en deux parties ou groupes mais de même effectif , tel que :
+                    <li>Un groupe contient les données inférieures ou égale à la médiane .
+                    </li>
+                    <li>L'autre groupe contient les données supérieures ou égales à la médiane . </li>
+                </p>
+                Remarque :
+                <p>
+                    Soit le cas d'un effectif total N impaire : <br> <i class="bi-arrow-right"> La médiane est la donnée de la série de rang  (N+1)/2  </i> le cas d'effectif total N impaire : <br> <i class="bi-arrow-right"></i> aucune donnée de la série
+                    ordonnée ne partage la série en deux groupes de même effectifs <br>.Toute valeur comprise entre les données de rang (N/2) et (N/2) + 1 peut etre prise comme médiane .
+                </p>
+                Exemple :
+                <p>
+                    <li>
+                        Les note d'un élève de 3<sup>ième</sup>année secondaire de première trimestre sont les suivantes :
+                    </li>
+                    <p> 8; 10 ; 9 ; 11 ; 18 ; 20 ; 15; 8 ; 11 ;16 ; 17 ; 19 ; 15 <br>On ordonne la série des 13 notes , 13 était impaire , donc la médiane dans ce cas est correspondant à la donnée de rang (13 + 1) / 2 . <br>soit de 7° rang de la série ordonnée
+                        .
+                    </p>
+                    <img src="Documentations/mediane_de_la_serie_ordonnee.svg" alt="représentation de la médiane au 7° rang de la série ordonnée .">
+                    <li>Les notes de même élève de la douxiéme trimestre sont : </li>
+                    <p>
+                        6 ; 7 ; 8 ; 9 ; 11 ; 12 ; 13; 15 ; 18 ; 19 ; 20 ; 20 <br> l'effectif total est N = 12 <br>Toute valeur comprise entre les données de rangs N/2 et (N/2) + 1 , soit le 6° et le 7° ordonnée , peut être pris comme médiane . <br> On
+                        va choisi la moyenne des deux données , soit 12,5 .
+                    </p>
+                </p>
+            </section>
+            <section>
+                <h2>4 -Etendue :</h2>
+                Définition :
+                <p>
+                    L'tendue d'une série statistique est la différence entre la plus grande et la plus petite des valeurs du caractère .</p>
+                Exepmle :
+                <p>
+                    3 , 3 , 4 , 1 , 5 , 7 , 12 , 8 , 10
+                    <br> L'étendue de cette série est égale à <b>9</b> , En effet : 12 - 3 = 09
+                </p>
+            </section>
+            <section>
+                <h2>Exercice Résolus</h2>
+                Ex1:
+                <li>Dans une classe de groupe de 100 écoliers , voici les moyennes obtenes dans un évaluation :</li>
+                <table>
+                    <tr>
+                        <th class="notes">Notes</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>12</th>
+                        <th>14</th>
+                        <th>15</th>
+                        <th>18</th>
+                        <th>17</th>
+                        <th>16</th>
+                        <th>20</th>
+                    </tr>
+                    <tr class="effectifs">
+                        <th>Effectifs</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>13</th>
+                        <th>10</th>
+                        <th>12</th>
+                        <th>9</th>
+                        <th>2</th>
+                        <th>14</th>
+                        <th>17</th>
+                        <th>15</th>
+                    </tr>
+                </table>
+                <li>Construire le diagramme en bàtons des effectifs :</li>
+                Solution :
+            </section>
+        </section>
+    </div>
+    <!---------------------------- tools --------------------------->
+    <div class="tools">
+        <div class="tool">
+            <a class="home" href="../../index.html"><i class="bi-house"></i></a>
+            <i class="randomColor bi-palette"></i>
+            <i class="top bi-hand-index"></i>
+        </div>
+    </div>
+    <script src="../../dist/js/lessons.js"></script>
+    <script>
+        $("section").children("img").click(function() {
+            $(this).toggleClass("view_class")
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>4ième votre plate-forme d'éducation enligne . </title>
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../dist/bootstrap-icons/bootstrap-icons.css">
+    <script src="../../dist/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</head>
+<style>
+    /* .pages {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .pages {
+        width: 100%;
+        overflow: scroll;
+    }
+    
+    .pages img {
+        width: 400px;
+        cursor: pointer;
+        box-shadow: 1px 0px 2px 1px;
+    }
+    
+    .pages img:hover {
+        filter: invert(2);
+    }
+    
+    .bodyfilter {
+        filter: invert(2);
+    }
+    
+    i:hover {
+        cursor: pointer;
+    } */
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../dist/images/logo/4ieme.svg" alt="logo de 4ieme" width="100%" height="60" class="d-inline-block align-text-top" style="margin-bottom: 10px;">
+            </a>
+            <button class="navbar-toggler border-0 fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="collection">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="..\..\index.html" title="Acceuille 4IEME">accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\lessons\Lessons.html" title="Lessons 4IEME">Leçons</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="..\..\exercices.html" title="exercices 4IEME">exercices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Pratiques.html" title="Pratiques 4IEME">Pratiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Evaluations.html" title="Evaluations 4IEME">Evaluations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Examens.html" title="Examens 4IEME">Examens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Résumés.html" title="Résumés 4IEME">Résumés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Jeux d'apprentissages.html" title="Jeux d'apprentissages 4IEME">Jeux d'apprentissages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Tests.html" title="Tests 4IEME">Tests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Réactions.html" title="Réactions 4IEME">Réactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Animations.html" title="Animations 4IEME">Animations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Equipe.html" title="Equipe 4IEME">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Niveaux.html" title="Niveaux 4IEME">Niveaux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Contacter.html" title="Contacter 4IEME">Contacter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..\..\categories\Blog.html" title="Blog 4IEME">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 
+    <section class="pages">
+        <img src="documentation/factorisation-et-reduction-expressions.svg" width="100%" height="100%" alt="factorisation et réduction d 'une expression">
+        <img src="documentation/développer-une-expression-littérale.svg" width="100%" height="100%" alt="Devolepper une expression littérale">
+        <img src="documentation/puissance-nombre-relative.svg" width="100%" height="100%" alt="puissance d'un nombre relatif">
+    </section> -->
+    <div class="toggler p-1 position-fixed" style="right:0;bottom: 0;z-index: 100;"><i class="smtoggler  bi-arrow-left-right fs-4" style="z-index: 100;cursor: pointer;"
+            style="cursor: pointer;"></i>
+    </div>
+    <div class="aside w-25 position-fixed d-flex flex-column justify-content-center" style="right: 0;bottom: 0;">
+    </div>
+    <script>
+    document.querySelector('.aside').style.height = window.innerHeight - document.querySelector('nav').clientHeight + "px"    
+    document.querySelector('.smtoggler').addEventListener('click',()=>{
+    document.querySelectorAll('.aside > .listaside').forEach(li=>{
+        li.classList.toggle('d-none')
+    })
+    document.querySelector('section').classList.toggle('w-100')
+    })
+    </script>
+    <section class="py-1 w-75">
+        <h1 class="Calcul-numérique-puissances-et-identités-remarquable text-center fw-bold shadow p-5 bg-dark text-light" id="Calcul-numérique-puissances-et-identités-remarquable" title="Calcul numérique : puissances et identités remarquable">Calcul numérique : puissance et identités remarquable :</h1>
+        <div class="container-fluid">
+            <h2  class="h2 factoriser-reduire-expression  fw-bold py-3 shadow bg-light" id="factoriser-reduire-expression" title="factoriser, réduire une expression">Factoriser, réduire une expression :</h2>
+            <!-- <img src="documentation/factorisation-et-reduction-expressions.svg" width="100%" height="100%" alt="factorisation et réduction d 'une expression"> -->
+               <p class="contenue bg-light p-5 display-6 fs-5">
+            **La Factorisation en Mathématiques**
+            
+            La factorisation est un processus mathématique qui consiste à décomposer une expression numérique ou littérale en un
+            produit de facteurs. Les facteurs sont des termes qui, lorsqu'ils sont multipliés ensemble, donnent l'expression
+            d'origine. La factorisation est utilisée pour simplifier des expressions complexes, résoudre des équations, et résoudre
+            des problèmes mathématiques de manière efficace.
+            
+            **Types de Factorisation :**
+            
+            Il existe plusieurs types de factorisation que nous pouvons utiliser en fonction de la nature de l'expression que nous
+            souhaitons factoriser :
+            
+            * 1. Factorisation numérique :*
+            
+            La factorisation numérique concerne la décomposition des nombres en facteurs premiers. @@Par exemple:@@ le nombre 24 peut
+            être factorisé en \(2 \times 2 \times 2 \times 3\), où \(2\) et \(3\) sont des facteurs premiers.
+            
+            * 2. Factorisation littérale :*
+            
+            La factorisation littérale concerne la décomposition d'expressions algébriques en facteurs. @@Par exemple:@@ l'expression
+            \(x^2 - 4\) peut être factorisée en \((x + 2)(x - 2)\).
+            
+            **Méthodes de Factorisation :**
+            
+            Il existe différentes méthodes de factorisation que nous pouvons utiliser en fonction de la structure de l'expression :
+            
+            *1. Recherche des facteurs communs :*
+            
+            La première étape de la factorisation consiste à rechercher des facteurs communs dans l'expression. Si les termes de
+            l'expression ont un facteur commun, nous pouvons les regrouper et les factoriser ensemble. @@Par exemple:@@ dans
+            l'expression \(3x^2 + 6x\), nous pouvons factoriser \(3x\) en tant que facteur commun : \(3x(x + 2)\).
+            
+            *2. Utilisation d'identités remarquables :*
+            
+            Les identités remarquables sont des formules spéciales qui nous permettent de factoriser certaines expressions
+            rapidement. @@Par exemple:@@ l'identité pour le carré d'une somme \((a + b)^2 = a^2 + 2ab + b^2\) peut être utilisée pour
+            factoriser des expressions telles que \(x^2 + 6x + 9\) en \((x + 3)^2\).
+            
+            *3. Différences de carrés :*
+            
+            Une autre méthode courante de factorisation est la différence de carrés. Une différence de carrés est une expression de
+            la forme \(a^2 - b^2\), qui peut être factorisée en \((a + b)(a - b)\). @@Par exemple:@@ \(x^2 - 4\) peut être factorisé en
+            \((x + 2)(x - 2)\).
+            
+            *4. Groupement :*
+            
+            Dans certains cas, nous pouvons regrouper les termes de l'expression de manière stratégique pour faciliter la
+            factorisation. @@Par exemple:@@ dans l'expression \(ax + ay + bx + by\), nous pouvons regrouper les termes \(ax + bx\) et
+            \(ay + by\) pour factoriser par regroupement : \(x(a + b) + y(a + b)\), puis \((x + y)(a + b)\).
+            
+            **Utilité de la Factorisation :**
+            
+            La factorisation est une compétence essentielle en mathématiques qui a de nombreuses applications :
+            
+            *1. Simplification des expressions algébriques complexes.*
+            *2. Résolution d'équations algébriques.*
+            *3. Résolution de problèmes mathématiques dans divers domaines, tels que l'algèbre, la géométrie, les probabilités, etc.*
+            *4. Simplification de problèmes en sciences et en ingénierie qui impliquent des expressions mathématiques.*
+            
+            @_@_@En résumé, la factorisation est une compétence clé qui permet de simplifier et de résoudre efficacement des expressions
+            mathématiques. Il est important de maîtriser les différentes méthodes de factorisation pour développer vos compétences
+            en algèbre et réussir en mathématiques. La pratique régulière avec divers exemples de factorisation vous aidera à
+            renforcer votre compréhension et votre compétence dans ce domaine.@_@_@
+               <!-- Reduction d'une expression -->
+               
+
+            **Réduction d'une expression mathématique :**
+            
+            *Introduction :*
+            La réduction d'une expression mathématique est une compétence essentielle en algèbre. Elle nous permet de simplifier des
+            expressions complexes en utilisant des règles algébriques de base. Dans cette leçon, nous allons explorer les principes
+            fondamentaux de la simplification algébrique et apprendre à réduire des expressions mathématiques en suivant des étapes
+            simples.
+            
+            *1. Terminologie de base :*
+            - Une expression mathématique est une combinaison de nombres, variables et opérations telles que l'addition, la
+            soustraction, la multiplication et la division.
+            - Les termes sont les parties individuelles de l'expression séparées par des opérateurs.
+            - Les coefficients sont les nombres qui multiplient les variables dans un terme.
+            
+            *2. Propriétés utiles pour la réduction d'expressions :*
+            - La propriété distributive : \( a \times (b + c) = a \times b + a \times c \). Elle nous permet de développer les
+            termes entre parenthèses en les multipliant par le coefficient à l'extérieur des parenthèses.
+            - Combinaison de termes similaires : Les termes qui contiennent la même variable peuvent être combinés en utilisant les
+            règles d'addition et de soustraction.
+            
+            *3. Étapes pour réduire une expression :*
+           @ a. Si l'expression contient des parenthèses, commencez par distribuer les termes.@ 
+           @ b. Combinez les termes similaires en utilisant les règles d'addition et de soustraction.@ 
+           @ c. Continuez à simplifier l'expression jusqu'à ce qu'elle ne puisse plus être réduite.@ 
+            
+           @@ Exemple 1 : @@ 
+            Réduisons l'expression \( E = 2x + 3(2x - 5) + 4(3 - x) \).
+            
+           @ a. Distribuons les termes :@ 
+            \[ E = 2x + 3 \times 2x - 3 \times 5 + 4 \times 3 - 4 \times x \]
+            \[ E = 2x + 6x - 15 + 12 - 4x \]
+            
+           @ b. Combinons les termes similaires :@ 
+            \[ E = (2x + 6x - 4x) - 15 + 12 \]
+            \[ E = 4x - 3 \]
+            
+            @@ Exemple 2 : @@
+            Réduisons l'expression \( F = 3(x + 2) - 2(2x - 1) \).
+            
+           @ a. Distribuons les termes :@ 
+            \[ F = 3x + 6 - 4x + 2 \]
+            
+           @ b. Combinons les termes similaires :@ 
+            \[ F = (3x - 4x) + (6 + 2) \]
+            \[ F = -x + 8 \]
+            
+            @_@_@Conclusion :
+            La réduction d'une expression mathématique est un processus important pour simplifier les équations et résoudre des
+            problèmes en mathématiques. En utilisant les propriétés algébriques de base et en suivant les étapes de simplification,
+            nous pouvons transformer des expressions complexes en des formes plus concises et plus faciles à manipuler. La pratique
+            régulière de la réduction d'expressions aidera à renforcer les compétences en algèbre et à résoudre des problèmes plus
+            avancés dans le futur.@_@_@
+       
+               </p>
+
+        </div>
+        <div class="container-fluid">
+            <h2 class="developper-une-expression-litterale shadow fw-bold py-3 " id="developper-une-expression-litterale">Développer une expression littérale :
+            </h2>
+            <!-- <img src="documentation/développer-une-expression-littérale.svg" width="100%" height="100%" alt="Developper une expression littérale"> -->
+        <!-- Developper une expression mathematique -->
+        
+        <p class="contenue bg-light p-5 display-6 fs-5">
+        **Développement d'une expression mathématique :**
+        
+        *Introduction :*
+        Le développement d'une expression mathématique est une compétence fondamentale en algèbre. Cela nous permet de
+        simplifier les expressions contenant des parenthèses en multipliant les termes à l'intérieur des parenthèses par le
+        coefficient à l'extérieur. Dans cette leçon, nous allons apprendre comment développer une expression mathématique en
+        utilisant la propriété distributive.
+        
+        *1. Terminologie de base :*
+        - Une expression mathématique est une combinaison de nombres, variables et opérations telles que l'addition, la
+        soustraction, la multiplication et la division.
+        - La propriété distributive est une règle algébrique qui dit que \( a \times (b + c) = a \times b + a \times c \).
+        
+        *2. Étapes pour développer une expression :*
+        @a. Identifiez le coefficient à l'extérieur des parenthèses.@
+        @b. Multipliez chaque terme à l'intérieur des parenthèses par le coefficient.@
+        
+        @@Exemple :@@
+        Développons l'expression \( E = 3(x + 2) \).
+        
+        @a. Le coefficient à l'extérieur des parenthèses est \( 3 \).@
+        @b. Multiplions chaque terme à l'intérieur des parenthèses par \( 3 \) :@
+        \( E = 3 \times x + 3 \times 2 \)
+        
+        \( E = 3x + 6 \)
+        
+        @_@_@Conclusion :
+        Le développement d'une expression mathématique est un processus simple qui implique l'utilisation de la propriété
+        distributive. En multipliant chaque terme à l'intérieur des parenthèses par le coefficient à l'extérieur, nous pouvons
+        développer l'expression et obtenir une forme équivalente sans parenthèses. Cette compétence est essentielle pour
+        simplifier les expressions et résoudre des problèmes plus complexes en algèbre. La pratique régulière du développement
+        d'expressions aidera à renforcer les compétences en algèbre et à faciliter la résolution de problèmes mathématiques plus
+        avancés.@_@_@
+        </p>
+        </div>
+        <div class="container-fluid">
+            <h2 class="puissance-un-nombre-relatif shadow fw-bold py-3" id="puissance-un-nombre-relatif" title="puissance d'un nombre relatif">Puissance d'un nombre relatif :</h2>
+        <p class="contenue bg-light p-5 display-6 fs-5">
+            **puissances des nombres relatifs :**
+        
+        *Introduction :*
+        Les puissances des nombres relatifs sont un concept fondamental en mathématiques. Une puissance représente une
+        multiplication répétée d'un nombre par lui-même. Dans cette leçon, nous allons explorer comment calculer les puissances
+        des nombres relatifs et comprendre les règles de base associées à ce concept.
+        
+        *1. Notation des puissances :*
+        Une puissance est généralement représentée par la base élevée à un exposant. La notation standard est la suivante : \(
+        a^n \), où \( a \) est la base et \( n \) est l'exposant.
+        
+        *2. Puissances positives et négatives :*
+        - Une puissance positive \( a^n \) signifie que nous multiplions la base \( a \) par elle-même \( n \) fois. Par
+        @@exemple :@@ \( 2^3 \) signifie \( 2 \times 2 \times 2 = 8 \).
+        - Une puissance négative \( a^{-n} \) signifie que nous prenons l'inverse de la base \( a \) et la multiplions \( n \)
+        fois. Par @@exemple :@@ \( 2^{-2} \) signifie \( \frac{1}{2} \times \frac{1}{2} = \frac{1}{4} \).
+        
+        *3. Règles de base pour les puissances des nombres relatifs :*
+        @a. \( a^0 = 1 \) : Tout nombre non nul élevé à la puissance zéro est égal à 1.@
+        @b. \( a^1 = a \) : Tout nombre élevé à la puissance un reste inchangé.@
+        @c. \( a^{-n} = \frac{1}{a^n} \) : Pour calculer une puissance négative, prenez l'inverse de la base et élevez-la à la
+        puissance positive correspondante.@
+        
+        @@Exemples :@@
+        1. \( 3^4 \) signifie \( 3 \times 3 \times 3 \times 3 = 81 \).
+        2. \( (-2)^3 \) signifie \( (-2) \times (-2) \times (-2) = -8 \).
+        3. \( 5^{-2} \) signifie \( \frac{1}{5^2} = \frac{1}{25} \).
+        
+        **Voici quelques propriétés supplémentaires :**
+        
+        *1. Puissance d'une puissance :*
+        \( (a^m)^n = a^{m \times n} \)
+        Cette propriété indique que pour élever une puissance \( a \) à une autre puissance \( m \), on multiplie les exposants.
+        @@Par exemple:@@ \( (2^3)^2 = 2^{3 \times 2} = 2^6 = 64 \).
+        
+        *2. Produit de puissances avec la même base :*
+        \( a^m \times a^n = a^{m + n} \)
+        Lorsque nous multiplions deux puissances ayant la même base \( a \), nous pouvons ajouter les exposants. @@Par exemple:@@ \(
+        2^3 \times 2^2 = 2^{3 + 2} = 2^5 = 32 \).
+        
+        *3. Quotient de puissances avec la même base :*
+        \( \frac{a^m}{a^n} = a^{m - n} \)
+        Lorsque nous divisons deux puissances ayant la même base \( a \), nous pouvons soustraire les exposants. @@Par exemple:@@ \(
+        \frac{3^4}{3^2} = 3^{4 - 2} = 3^2 = 9 \).
+        
+        *4. Puissance d'un produit :*
+        \( (a \times b)^n = a^n \times b^n \)
+        Lorsque nous élevons un produit \( a \times b \) à une puissance \( n \), nous pouvons élever chaque facteur à la
+        puissance \( n \). @@Par exemple:@@ \( (2 \times 3)^2 = 2^2 \times 3^2 = 4 \times 9 = 36 \).
+        
+        *5. Puissance d'un quotient :*
+        \( \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} \)
+        Lorsque nous élevons un quotient \( \frac{a}{b} \) à une puissance \( n \), nous pouvons élever le numérateur et le
+        dénominateur à la puissance \( n \). @@Par exemple:@@ \( \left(\frac{4}{2}\right)^3 = \frac{4^3}{2^3} = \frac{64}{8} = 8 \).
+        
+        Ces propriétés supplémentaires sont très utiles pour simplifier les expressions contenant des puissances et permettent
+        d'effectuer des calculs plus rapidement et plus efficacement. La compréhension de ces propriétés vous aidera à résoudre
+        des problèmes mathématiques plus complexes liés aux puissances des nombres relatifs.
+
+        @_@_@Conclusion :
+        Les puissances des nombres relatifs sont un outil puissant en mathématiques pour exprimer des calculs répétés et des
+        relations exponentielles. En comprenant les règles de base pour les puissances, nous pouvons résoudre des problèmes
+        impliquant des nombres relatifs élevés à des exposants positifs ou négatifs. La pratique régulière des puissances des
+        nombres relatifs améliorera notre compréhension des concepts mathématiques plus avancés.@_@_@
+        </p>
+            </div>
+        <div class="container-fluid">
+            <h2 class="Opérations-sur-les-puissances-un-même-nombre shadow fw-bold py-3" id="Opérations-sur-les-puissances-un-même-nombre">Opérations sur les puissances d'un même nombre :</h2>
+            <p class="contenue bg-light p-5 display-6 fs-5">
+            **les opérations sur les puissances d'un même nombre :**
+            
+            *1. Exposant (puissance) :*
+            Lorsque nous élevons un nombre à une certaine puissance, nous utilisons l'exposant pour indiquer le nombre de fois que
+            ce nombre est multiplié par lui-même. @@Par exemple:@@ si nous avons le nombre "a" et l'exposant "n", alors \(a^n\) signifie
+            que le nombre "a" est multiplié par lui-même "n" fois.
+            
+            @@Exemple :@@ \(2^3 = 2 \times 2 \times 2 = 8\)
+            
+           *2. Multiplication de puissances de même base :*
+            Lorsque nous multiplions deux puissances ayant la même base, nous pouvons additionner les exposants.
+            
+            @@Exemple :@@ \(2^3 \times 2^2 = 2^{3+2} = 2^5 = 32\)
+            
+            *3. Division de puissances de même base :*
+            Lorsque nous divisons deux puissances ayant la même base, nous pouvons soustraire l'exposant du dénominateur à
+            l'exposant du numérateur.
+            
+            @@Exemple :@@ \(\frac{5^4}{5^2} = 5^{4-2} = 5^2 = 25\)
+            
+            *4. Puissance d'une puissance :*
+            Lorsque nous avons une puissance élevée à une autre puissance, nous multiplions les exposants.
+            
+            @@Exemple :@@ \((2^3)^2 = 2^{3 \times 2} = 2^6 = 64\)
+            
+            *5. Puissance de zéro :*
+            Tout nombre (sauf zéro) élevé à la puissance de zéro est égal à 1.
+            
+            @@Exemple :@@ \(3^0 = 1\)
+            
+            *6. Puissance de un :*
+            Tout nombre élevé à la puissance de un est égal à lui-même.
+            
+            @@Exemple :@@ \(4^1 = 4\)
+            
+            La représentation LaTeX est largement utilisée pour écrire des équations mathématiques et des formules scientifiques de
+            manière claire et précise. Cela facilite la communication et la compréhension des concepts mathématiques.
+
+            </p>
+        </div>
+        <div class="container-fluid">
+            <h2 class="Opérations-sur-les-puissances-un-même-nombre shadow fw-bold py-3" id="opérations-sur-les-puissances-un-même-exposant">Opérations sur les puissances d’un même exposant :</h2>
+        
+            <p class="contenue bg-light p-5 display-6 fs-5">
+
+       **opérations sur les puissances d'un même exposant** 
+        
+        *1. Puissances avec la même base :*
+        Lorsque vous avez deux nombres, "a" et "b", élevés au même exposant "n", cela se note comme suit :
+        \[a^n \quad \text{et} \quad b^n\]
+        Les bases "a" et "b" sont différentes, mais l'exposant "n" est le même pour les deux puissances.
+        
+        *2. Addition de puissances :*
+        Pour effectuer l'addition de deux puissances avec la même base et le même exposant "n", vous écrivez simplement :
+        \[a^n + b^n\]
+        @@Par exemple:@@ si \(a^3 + b^3\), cela signifie que vous avez les termes \(a^3\) et \(b^3\) que vous additionnez.
+        
+        *3. Soustraction de puissances :*
+        De manière similaire, pour effectuer la soustraction de deux puissances avec la même base et le même exposant "n", vous
+        écrivez :
+        \[a^n - b^n\]
+        @@Par exemple:@@ si \(a^4 - b^4\), cela signifie que vous avez les termes \(a^4\) et \(b^4\) que vous soustrayez.
+        
+        *4. Multiplication de puissances :*
+        Lorsque vous multipliez deux puissances avec la même base et le même exposant "n", vous combinez les bases en
+        multipliant :
+        \[a^n \cdot b^n = (a \cdot b)^n\]
+        @@Par exemple:@@ si \(a^2 \cdot b^2\), vous pouvez les combiner pour obtenir \((a \cdot b)^2\).
+        
+        *5. Division de puissances :*
+        En cas de division de deux puissances avec la même base et le même exposant "n", vous combinez les bases en effectuant
+        la division :
+        \[\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n\]
+        @@Par exemple:@@ si \(\frac{a^5}{b^5}\), vous pouvez les combiner pour obtenir \(\left(\frac{a}{b}\right)^5\).
+        </p>
+        </div>
+        <div class="container-fluid">
+            <h2 class="ecriture-scientifique shadow fw-bold py-3" id="ecriture-scientifique">Ecriture scientifique :</h2>
+            <p class="contenue bg-light p-5 display-6 fs-5">
+            **L'écriture scientifique**
+        L'écriture scientifique est une notation utilisée pour représenter des nombres très grands ou très petits de manière
+        concise et pratique. Elle est couramment utilisée en sciences et en mathématiques. L'écriture scientifique s'exprime
+        sous la forme :
+        
+        \[a \times 10^n\]
+        
+        où "a" est un nombre décimal compris entre 1 et 10 (1 inclus, 10 exclus) et "n" est un exposant entier qui indique le
+        décalage de la virgule. Si "n" est positif, cela signifie que la virgule est déplacée vers la droite. Si "n" est
+        négatif, cela signifie que la virgule est déplacée vers la gauche.
+        
+        Voici quelques exemples d'écriture scientifique pour illustrer le concept :
+        
+        *1. Nombre très grand :*
+        300 000 000 peut être écrit en écriture scientifique comme \(3 \times 10^8\).
+        Le décalage de la virgule est de 8 positions vers la droite.
+        
+        *2. Nombre très petit :*
+        0,000005 peut être écrit en écriture scientifique comme \(5 \times 10^{-6}\).
+        Le décalage de la virgule est de 6 positions vers la gauche.
+        
+        *3. Autre exemple :*
+        23 000 peut être écrit en écriture scientifique comme \(2,3 \times 10^4\).
+        Le décalage de la virgule est de 4 positions vers la droite.
+        
+        Il est important de noter que l'écriture scientifique n'est pas destinée à fournir une approximation, mais plutôt à
+        représenter un nombre de manière compacte tout en indiquant clairement son ordre de grandeur. Cela facilite les calculs
+        avec des nombres très grands ou très petits et rend les résultats plus compréhensibles.
+        </p>
+        </div>
+        <div class="container-fluid">
+            <h2 class="ecriture-scientifique shadow fw-bold py-3" id="identites-remarquables">Identités remarquables :</h2>
+
+        <p class="contenue bg-light p-5 display-6 fs-5">
+        **Les identités remarquables**
+        Les identités remarquables, également appelées formules remarquables, sont des expressions algébriques spéciales qui
+        apparaissent fréquemment dans les mathématiques. Elles sont utiles pour simplifier des expressions, effectuer des
+        calculs et résoudre des équations. Voici les trois identités remarquables les plus courantes :
+        
+        *1. Identité remarquable pour le carré d'une somme :*
+        \[(a + b)^2 = a^2 + 2ab + b^2\]
+        
+        *2. Identité remarquable pour le carré d'une différence :*
+        \[(a - b)^2 = a^2 - 2ab + b^2\]
+        
+        *3. Identité remarquable pour la différence de carrés :*
+        \[(a + b)(a - b) = a^2 - b^2\]
+        
+        Ces identités remarquables peuvent être utilisées pour développer des expressions algébriques ou factoriser des
+        expressions, selon le sens dans lequel elles sont appliquées.
+        
+        Exemples d'utilisation des identités remarquables :
+        
+        *1. Pour développer une expression :*
+        \((x + 3)^2 = x^2 + 2 \cdot x \cdot 3 + 3^2 = x^2 + 6x + 9\)
+        
+        *2. Pour factoriser une expression :*
+        \(4x^2 - 9 = (2x)^2 - 3^2 = (2x + 3)(2x - 3)\)
+        
+        *3. Pour simplifier une expression :*
+        \(a^4 - b^4 = (a^2)^2 - (b^2)^2 = (a^2 + b^2)(a^2 - b^2)\)
+        
+        Il est important de se familiariser avec ces identités remarquables, car elles sont souvent utilisées pour résoudre des
+        problèmes mathématiques plus complexes et pour simplifier les calculs dans divers domaines des mathématiques.
+        
+        </p>
+
+        </div>
+    </section>
+    <!---------------------------- tools --------------------------->
+    <div class="tools">
+        <div class="tool">
+            <a class="home" href="../../index.html"><i class="bi-house"></i></a>
+            <i class="top bi-hand-index"></i>
+        </div>
+    </div>
+    <div class="windowInfo shadow bg-danger"></div>
+    <script>
+    window.onresize=()=>{
+    document.querySelector('.windowInfo').innerHTML ="width =" + window.innerWidth + "<br>" + "height" + window.innerHeight; 
+    }
+    </script>
+    <style>
+    .windowInfo {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    }
+    </style>
+    <style>
+        .settings {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: var(--bs-orange);
+        }
+        
+        input {
+            outline: 0;
+            border: 0;
+            width: 100%;
+            height: 50%;
+            box-shadow: 2px 2px 15px 0.3px;
+        }
+        
+        .button {
+            text-transform: capitalize;
+            padding: 10px;
+            font-weight: bold;
+            width: 100%;
+            outline: 0;
+            border: 0;
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .info {
+            text-align: center;
+        }
+    </style>
+     <script>
+        // document.addEventListener("keydown", (e) => {
+        //     // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
+        //     // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
+        //     // THIS WILL ONLY DISABLE CONTROL AND F12
+        //     if (e.ctrlKey || e.keyCode == 123) {
+        //         e.stopPropagation();
+        //         e.preventDefault();
+        //     }
+        // });
+        document.querySelectorAll('.contenue').forEach(contenue=>{
+        contenue.innerHTML = contenue.innerHTML.replace(/\*\*(.*?)\*\*/g, '<h4 style="font-weight:bold;" class="display-6 fs-3 fw-light text-success pt-3 pb-3 mt-5 mb-5 bi-flower1">$1</h4>')
+            contenue.innerHTML = contenue.innerHTML.replace(/\*([^*]+)\*/g, '<li class="display-6 fs-3 text-danger">$1</li>')
+            setTimeout(() => {
+                contenue.innerHTML = contenue.innerHTML.replace(/\@@([^@@]+)\@@/g, '<li class="display-6 fs-3 mt-4 mb-4 w-25" style="border-bottom:1px solid grey">Par exemple: </li>').replace(/\@_@_@([^@_@_@]+)\@_@_@/g, '<br><li class="display-6 fs-4 shadow">$1</li><br><hr>').replace(/\@([^@]+)\@/g, '<br><li class="text-secondary display-6 fs-4">$1</li>').replace(/ - /g,'<br>-')
+            }, 1000);
+        })
+
+    const h2type = document.getElementsByTagName('h2')
+
+    for (let i = 0; i < h2type.length; i++) {
+        document.querySelector('.aside').innerHTML += "<a class='listaside bi-list-check'> "+h2type[i].innerHTML+"</a>"
+    }
+
+        document.querySelectorAll('.listaside').forEach(list => {
+            list.setAttribute('href', "#" + list.innerHTML.split(' ')[1].toString().replace(/,/g, ''))
+        })
+    document.querySelectorAll('h2').forEach(h2=>{
+        h2.setAttribute('id',h2.innerHTML.split(' ')[0].toString().replace(/ /g,'_').replace(/,/g,''))
+    })
+    document.querySelector('.MJXp-math').classList.add('fs-3')
+
+    </script> 
+    <script src="../../dist/js/bootstrap.bundle.js"></script>
+    <script src="../../dist/js/lessons.js"></script>
+    <script src="../../dist/js/main.js"></script>
+</body>
+
+</html>

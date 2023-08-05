@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Mrs+Saint+Delafield&display=swap');
+:root {
+    --darkblue: darkblue;
+    --darkcyan: darkcyan;
+    --darkgoldenrod: darkgoldenrod;
+    --darkgreen: darkgreen;
+    --darkmagenta: darkmagenta;
+    --darkorange: darkorange;
+    --darkred: darkred;
+    --darkslategray: darkslategray;
+    --darkslateblue: darkslateblue;
+    --darkseagreen: darkseagreen;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* user-select: none !important; */
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+tspan,
+text {
+    font-size: 24px !important;
+}
+
+a,
+.menu-left-toggler {
+    cursor: pointer;
+}
+
+body {
+    padding-bottom: 2%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-light);
+    border: 1px solid;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    ;
+    transition: 3s ease-in;
+    position: absolute;
+}
+
+::-webkit-scrollbar-thump:hover {
+    background-color: #fff;
+    width: 100px;
+    border-radius: 50%;
+}
+
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero img {
+    width: 50%;
+    z-index: 12;
+}
+
+.intro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro li {
+    font-size: 10px !important;
+    text-align: center !important;
+    width: 100%;
+}
+
+.intro button {
+    margin-top: 10px;
+    padding: 5px !important;
+    margin-bottom: 50px !important;
+    outline: 0;
+    border: 0;
+    background-color: var(--bs-primary);
+}
+
+.decouvrir a {
+    color: var(--bs-wight);
+    text-decoration: underline;
+}
+
+.intro button:hover {
+    background-color: var(--bs-light);
+    border: 1px solid;
+}
+
+#myCarousel {
+    width: 80% !important;
+}
+
+.lessons {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 100px 0px 100px 0;
+    /* background-image: url(../../dist/images/logo/4ieme_mark.svg); */
+}
+
+.lessons a {
+    color: rgb(255, 255, 255) !important;
+}
+
+@media (max-width:502px) {
+    .lessons {
+        grid-template-columns: auto;
+    }
+}
+
+.lessons li {
+    list-style-type: decimal !important;
+    width: 50%;
+    height: 100%;
+    font-size: 10px !important;
+    text-align: start;
+}
+
+.lessons a {
+    color: rgb(11, 11, 11) !important;
+}
+
+.lessons a:hover {
+    text-decoration: underline !important;
+    background-color: var(--bs-dark);
+    color: var(--bs-light) !important;
+}
+
+.informations {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center !important;
+    padding: 50px 0px !important;
+}
+
+.informations li {
+    width: 100%;
+    color: var(--bs-secondary);
+    text-align: center;
+    z-index: 10;
+}
+
+.informations .groupe {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 9px !important;
+    justify-items: center;
+    font-weight: lighter !important;
+}
+
+.groupe li {
+    list-style-type: decimal !important;
+    text-align: start !important;
+    color: var(--bs-light) !important;
+}
+
+@media (max-width:887px) {
+    .informations .groupe {
+        display: gride !important;
+        grid-template-columns: auto !important;
+    }
+}
+
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 0 10px 0 !important;
+    background-color: var(--bs-dark);
+    z-index: -1;
+    margin-top: 20px;
+}
+
+.footer section {
+    border-left: 1px solid white;
+    padding: 0 10px 0 10px;
+}
+
+.links li,
+.links2 li {
+    width: 100%;
+    text-align: start !important;
+}
+
+.links2 {
+    width: 100%;
+    height: 100%;
+}
+
+.footer li a {
+    color: var(--bs-light) !important;
+    font-size: 10px !important;
+}
+
+.footer li a:hover {
+    text-decoration: underline !important;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: center;
+}
+
+.social-medias i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none !important;
+}
+
+li a {
+    text-decoration: none !important;
+}
+
+.puissance-symbole {
+    overflow: visible;
+    background-color: none !important;
+}
+
+.exposant {
+    color: var(--bs-pink);
+    font-weight: bold;
+}
+
+.puissance-symbole::after {
+    content: '{';
+    position: absolute;
+    -moz-transform: rotate(260deg) scale(2.5);
+    -ms-transform: rotate(260deg) scale(2.5);
+    -o-transform: rotate(260deg) scale(2.5);
+    -webkit-transform: rotate(260deg) scale(2.5);
+    transform: rotate(260deg) scale(2.5);
+    margin-left: -30px;
+    margin-top: 16px;
+    font-size: 2em;
+    font-weight: lighter !important;
+}
+
+.puissance-symbole::before {
+    content: 'n fois';
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.puissance-10-symbole::after {
+    content: '{';
+    position: absolute;
+    -moz-transform: rotate(260deg) scale(2.5);
+    -ms-transform: rotate(260deg) scale(2.5);
+    -o-transform: rotate(260deg) scale(2.5);
+    -webkit-transform: rotate(260deg) scale(2.5);
+    transform: rotate(260deg) scale(2.5);
+    margin-left: -35px;
+    margin-top: 16px;
+    font-size: 2em;
+    font-weight: lighter !important;
+}
+
+.puissance-10-symbole::before {
+    content: 'n zéros';
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.MC {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .lien-lesson {
+        list-style-type: square !important;
+    } */
+
+.lien-lesson li a:visited {
+    color: var(--bs-pink) !important;
+}
+
+.menu-left li {
+    text-align: start;
+}
+
+.menu-left li a {
+    width: 100% !important;
+    color: var(--bs-primary);
+}
+
+._class a {
+    color: var(--bs-secondary) !important;
+}
+
+.menu-left li a:hover {
+    text-decoration: underline !important;
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+}
+
+.cours {
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.cours section {
+    width: 100%;
+    height: 100%;
+    text-align: start !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 10px;
+    flex-direction: column;
+    background-color: #212529;
+    color: grey;
+    border-bottom: 1px solid #fff;
+}
+
+.cours section h2 {
+    font-size: 1.5em !important;
+    font-weight: lighter !important;
+    text-decoration: underline;
+}
+
+.cours-et-sous-titres {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    color: var(--bs-light);
+}
+
+.titres-de-cours {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-dark);
+    position: relative;
+    padding: 10px;
+}
+
+.titres-de-cours li a {
+    color: var(--bs-light);
+}
+
+.titres-de-cours li a:hover {
+    text-decoration: underline rgb(255, 255, 255) !important;
+    cursor: pointer;
+}
+
+
+/* tools  */
+
+.tools {
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.tool {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    position: fixed;
+    height: 5%;
+    width: 100%;
+}
+
+.tool i {
+    min-width: 10px;
+    color: var(--bs-dark);
+    font-size: 20px !important;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 20px !important;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3,
+h4 {
+    text-align: start;
+    font-weight: bold !important;
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: var(--bs-dark);
+}
+
+#preloader::before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    background-color: var(--bs-light);
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+#preloader::after {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    background-color: var(--bs-light);
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1.2s infinite reverse;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*--------------------------------------------------------------
+# lessons images
+--------------------------------------------------------------*/
+
+section img {
+    width: 100%;
+}
+
+.view_class {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 11111;
+    background-color: var(--bs-light);
+}
+
+@media (max-width:712px) {
+    .view_class {
+        transform: scaleY(0.9);
+        padding: 0;
+        border: 0;
+    }
+}
+
+@media (max-width:434px) {
+    .view_class {
+        transform: scaleY(0.6);
+        padding: 0;
+        border: 0;
+    }
+}
+
+@media (max-width:284px) {
+    .view_class {
+        transform: scaleY(0.5);
+        padding: 0;
+        border: 0;
+    }
+}
+
+table {
+    width: 100%;
+    position: relative;
+}
+
+td,
+th {
+    text-align: center !important;
+    margin: 1px;
+    border: 1px solid black !important;
+}
+
+.contenue{
+font-size: 1.5em;
+}
+.mjx-char{
+    font-size:calc(1.3rem + .6vw) !important;
+    font-weight: 100 !important;
+    line-height: 1.2;
+}
+.listaside{
+padding-left: 10%;
+text-align: start !important;
+transition: 0.2s;
+width: 100%;
+text-decoration: none;
+color: black;
+}
+.listaside:hover{
+    opacity:0.5;
+    border-bottom: 1px solid ;
+    cursor:pointer;
+    color: black !important;
+}
+
+section{
+transform: 1s;
+}
